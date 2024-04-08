@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/font_small"
+            android:title="12"/>
+    <item
+            android:id="@+id/font_medium"
+            android:title="16"/>
+    <item
+            android:id="@+id/font_large"
+            android:title="20"/>
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.myapplication">
+
+        <!-- Permissões necessárias para acesso à Internet -->
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <!-- Permissões necessárias para o login com o Google -->
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+        <!-- Permissões para o Google Play Services -->
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+        <!-- Permissões para verificar a conexão com a Internet -->
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+        <!-- Permissões necessárias para o Google SignIn -->
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage"/>
+
+        <!-- Permissões necessárias para obter a conta do Google do usuário -->
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+        <!-- Permissão para usar a API de login do Google -->
+        <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+        <!-- Adicione a seguinte meta tag para declarar o uso da versão do Google Play Services -->
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+    <!--suppress AndroidUnknownAttribute -->
+    <application
+            android:allowBackup=""
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" android:fullBackupContent="@xml/backup_descriptor">
+        <activity
+                android:name=".google"
+                android:exported="true"/>
+        <!-- Suas atividades aqui -->
+        <activity
+                android:name=".blocos"
+                android:exported="true"/>
+        <activity
+                android:name=".MainActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".welcome"
+                android:exported="true"/>
+        <activity
+                android:name=".perfil"
+                android:exported="true"
+                tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+
+    <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu texto aqui"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-1dp"
+            android:imeOptions="actionDone"/>
+
+
+    <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:onClick="saveNote" android:layout_alignParentStart="true" android:layout_marginStart="156dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="564dp"
+            android:layout_centerHorizontal="true"/>
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="#3E109A"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/toolbar3"
+            android:layout_marginStart="0dp"/>
+
+    <Button
+            android:text="^"
+            android:layout_width="37dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="99dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tamanho"
+            android:layout_marginBottom="0dp"
+            android:onClick="showFontSizePopup" tools:ignore="OnClick"/>
+    <ImageButton
+            android:layout_width="28dp"
+            android:layout_height="26dp" app:srcCompat="@drawable/captura_de_tela_2024_03_07_093002"
+            android:layout_alignParentStart="true" android:layout_marginStart="3dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="2dp" android:id="@+id/imgVoltar"/>
+
+</RelativeLayout>

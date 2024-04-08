@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="8dp">
+
+    <!-- ImageView circular para o marcador de seleção -->
+    <ImageView
+            android:id="@+id/selectionIndicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_red"
+            android:visibility="gone" /> <!-- Inicialmente invisível -->
+
+    <!-- TextView para exibir o texto da miniatura da nota -->
+    <TextView
+            android:id="@+id/noteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="Miniatura da nota" />
+
+</LinearLayout>
